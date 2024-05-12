@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 2</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/indx.css">
+</head>
+<body>
+    
+    <!-- <form action=""> -->
+        <div class="pt-5 w-100 text-center">
+            <h1 class="fw-bolder pb-5 m-auto ">BookMarker</h1>
+            <div class="hr  w-75  m-auto"></div>
+            <div class="">
+                
+                <h3 class="text-success pt-4"><i class="fa-solid fa-bookmark"></i> Bookmark your Favorite Sites <i class="fa-solid fa-bookmark"></i></h3>
+            </div>
+        </div>
+    
+
+        
+        <div class="w-75 m-auto py-4">
+            <label for="sn" class="py-1 fw-bolder"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+            <input id="sn" type="text" placeholder="Bookmark Name"  class="form-control mb-3" required>
+    
+    
+            <label for="su" class="py-1 fw-bolder"><i class="fa-solid fa-link"></i> Site URL</label>
+            <input id="su" type="url" placeholder="website URL"  class="form-control mb-3" required>
+    
+    
+            <div class="w-100 text-center py-2">
+                <button id="addBt" onclick="addBook()" class="btn btn-danger w-25">Submit</button>
+            </div>
+
+            <div class="w-100 text-center py-2">
+                <button id="updateBt" onclick="updateBook()" class="btn btn-outline-danger w-25 d-none">Update</button>
+            </div>
+
+            <table class="table mt-4 fw-bolder table-striped overflow-scroll">
+                <thead>
+                    <tr class="text-center">
+                        <td>idx</td>
+                        <td>Site Name</td>
+                        <td>Site URL</td>
+                        <td>Vist</td>
+                        <td>Delete</td>
+                        <td>Update</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+        
+    <!-- </form> -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
